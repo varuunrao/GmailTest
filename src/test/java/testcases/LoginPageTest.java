@@ -32,7 +32,7 @@ public class LoginPageTest {
     
     @BeforeMethod
     public void setUp(){
-    	System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver.exe");
     	driver = new ChromeDriver();
         driver.get("https://www.gmail.com");
         driver.manage().window().maximize();
